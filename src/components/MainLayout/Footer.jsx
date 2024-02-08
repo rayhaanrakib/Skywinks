@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BecomeHost = () => {
+const Footer = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const BecomeHost = () => {
     );
 };
 
-export default BecomeHost;
+export default Footer;
