@@ -69,8 +69,8 @@ const Nav = () => {
     </>
 
     return (
-        <div className='container mx-auto'>
-            <div className="navbar bg-base-100">
+        <div className=' bg-base-100 bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 right-0 shadow-sm'>
+            <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="drawer z-40">
                         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
