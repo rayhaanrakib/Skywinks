@@ -4,6 +4,7 @@ import TopPlaces from './../components/Home/TopPlaces';
 import { Helmet } from 'react-helmet';
 import Title from './../shared/Title';
 import PopularTours from './../components/Home/PopularTours';
+import NewTours from '../components/Home/NewTours';
 
 const Home = () => {
     return (
@@ -13,13 +14,17 @@ const Home = () => {
                 <Banner></Banner>
             </div>
 
-            <div className='my-24'>
+            <div className='my-36'>
                 <Title heading="top destination" subheading="Destinations" paragraph="Explore our top destinations voted by more than 100,000+ customers around the world."></Title>
                 <TopPlaces></TopPlaces>
             </div>
-            <div className='my-24'>
+            <div className='my-36'>
                 <Title heading="most visited places" subheading="top places" paragraph="Explore our top destinations voted by more than 100,000+ customers around the world."></Title>
                 <PopularTours></PopularTours>
+            </div>
+            <div className='my-36'>
+                <Title heading="Recently Added Tours" subheading="Fresh Packages"></Title>
+                <NewTours></NewTours>
             </div>
 
         </div>

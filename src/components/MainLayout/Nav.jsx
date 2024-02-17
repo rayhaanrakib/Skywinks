@@ -69,7 +69,7 @@ const Nav = () => {
     </>
 
     return (
-        <div className='bg-base-100 bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 right-0 shadow-sm z-50'>
+        <div className='bg-base-100 bg-opacity-90 backdrop-blur-md fixed top-0 left-0 right-0 shadow-sm z-50'>
             <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="drawer z-40">
@@ -81,13 +81,13 @@ const Nav = () => {
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                                     </label>
                                 </div>
-                                <a href='/' className="w-[60px]"><img src="/logo.png" alt="Skywinks" /></a>
+                                <a href='/' className="inline-block text-xl font-medium">SkyWinks Agency</a>
 
                             </div>
                         </div>
                         <div className="drawer-side">
                             <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                            <ul className="menu flex gap-5 capitalize font-medium text-[#3f4563] p-4 w-80 min-h-full bg-slate-100 pt-10">
+                            <ul className="menu flex gap-3 capitalize font-medium text-[#3f4563] p-4 w-80 min-h-full bg-slate-100 pt-10">
                                 {navlinks}
                             </ul>
                         </div>
@@ -99,15 +99,43 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn btn-ghost btn-circle">
+                    <button className="cursor-pointer bg-transparent hover:bg-transparent border-none text-secondaryV">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button>
-                    <button className="btn btn-ghost btn-circle">
-                        <div className="indicator">
-                            <CiGlobe className="text-2xl" />
-                            <span className="badge badge-xs badge-accent indicator-item"></span>
+                    <div className="dropdown dropdown-end dropdown-hover transition-all duration-800">
+                        <div tabIndex={0} role="button" className="m-1 rounded-sm text-sm py-2 px-3 bg-transparent font-semibold ">
+                            <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-secondaryV focus:ring-2 focus:ring-transparent ">
+                                <img class="w-5 h-5 rounded-full" src="https://img.icons8.com/fluency/48/usa-circular.png" alt="usa-circular" />
+                                English (US)
+                            </a>
                         </div>
-                    </button>
+                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded w-52 font-semibold">
+                            <li>
+                                <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="en">
+                                    <img class="w-5 h-5 rounded-full" src="https://img.icons8.com/fluency/48/usa-circular.png" alt="usa-circular" />
+                                    English (US)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="bn">
+                                    <img class="w-5 h-5 rounded-full" src="https://img.icons8.com/color/96/bangladesh-circular.png" alt="bangladesh-circular" />
+                                    Bengali (বাংলা)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="in">
+                                    <img class="w-5 h-5 rounded-full" src="https://img.icons8.com/fluency/48/india-circular.png" alt="india-circular" />
+                                    Hindi (हिन्दी)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="zh">
+                                    <img class="w-5 h-5 rounded-full" src="https://img.icons8.com/fluency/48/china-circular.png" alt="china-circular" />
+                                    中文 (繁體)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

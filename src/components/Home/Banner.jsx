@@ -1,4 +1,5 @@
 
+import ViewAllButton from './../../shared/ViewAllButton';
 
 
 const Banner = () => {
@@ -6,17 +7,15 @@ const Banner = () => {
         <div className='container mx-auto'>
             <div className='flex flex-col lg:flex-row justify-between'>
                 <div className='text-center lg:text-start'>
-                    <h2 className='bg-white text-primaryV font-medium lg:text-lg inline-block px-3 py-2 rounded-lg shadow-2xl'>Booking With Us!</h2>
-                    <h1 className='text-5xl md:text-6xl lg:text-8xl lg:my-12 my-10 font-semibold leading-tight'>Find Next Place<br />
+                    <h2 className='bg-white text-primaryV font-medium lg:text-base inline-block px-3 py-2 rounded-lg shadow-2xl'>Booking With Us!</h2>
+                    <h1 className='text-5xl md:text-6xl lg:text-[80px] lg:my-12 my-10 font-semibold leading-tight'>Find <span className='text-primaryV'>Next Place</span><br />
                         To Visit</h1>
                     <p className='sm:text-xl text-secondaryV'>Discover amzaing places at exclusive deals. <br />
                         Eat, Shop, Visit interesting places around the world.</p>
 
                     <div className='mt-8 lg:mt-12'>
-                        <a href="#_" class="relative inline-flex items-center justify-start px-8 py-3 overflow-hidden font-medium transition-all bg-primary rounded hover:bg-white group">
-                            <span class="w-48 h-48 rounded rotate-[-40deg] bg-primaryV absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                            <span class="relative w-full text-left text-primaryV transition-colors duration-300 ease-in-out group-hover:text-white">Search Now</span>
-                        </a>
+                        <ViewAllButton text="Search Now" ></ViewAllButton>
+
                     </div>
 
 
