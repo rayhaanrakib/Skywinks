@@ -3,13 +3,13 @@ import React from 'react';
 const TourCard = () => {
     return (
         <div>
-            <div className=" rounded-md bg-white border border-primary text-secondaryV shadow-lg">
+            <div className="rounded-md bg-white border border-primary text-secondaryV shadow-lg">
                 {/*  <!-- Image --> */}
                 <figure>
                     <img
                         src="https://i.ibb.co/BsH3KSs/banner-03.jpg"
                         alt="card image"
-                        className="aspect-video w-full object-cover"
+                        className="aspect-video w-full object-cover rounded-t-md"
                     />
                 </figure>
                 {/*  <!-- Body--> */}
@@ -18,7 +18,7 @@ const TourCard = () => {
                         <h3 className="text-xl font-medium text-secondary">
                             Venice, Rome and Milan – 9 Days
                         </h3>
-                        <p className="py-2 text-primaryV font-medium text-lg"> <del className='mr-2 text font-normal text-secondaryV'>$3,700</del>$2,000</p>
+                        <p className="py-2 text-primaryV font-medium text-xl"> <del className='mr-2 text-base font-normal text-secondaryV'>$3,700</del>$2,000</p>
                     </header>
                     <p>
                         A wonderful serenity has taken possession of my entire soul...

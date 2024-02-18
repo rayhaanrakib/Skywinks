@@ -81,7 +81,7 @@ const Nav = () => {
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                                     </label>
                                 </div>
-                                <a href='/' className="inline-block text-xl font-medium">SkyWinks Agency</a>
+                                <a href='/' className="inline-block lg:text-2xl font-medium md:font-semibold">SkyWinks Agency</a>
 
                             </div>
                         </div>
