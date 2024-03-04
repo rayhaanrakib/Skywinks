@@ -38,7 +38,7 @@ const Nav = () => {
         </li>
         <li>
             <NavLink
-                to="/other-services"
+                to="/services"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-secondary " : ""
                 }
@@ -94,14 +94,17 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="flex gap-8 capitalize font-medium text-[16px] text-secondaryV">
+                    <ul className="flex gap-8 capitalize font-[500] leading-[25.5px] text-[15px] text-secondaryV">
                         {navlinks}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="cursor-pointer bg-transparent hover:bg-transparent border-none text-secondaryV">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                    </button>
+                    <NavLink to="destinations" className="flex items-center">
+                        <button className="cursor-pointer bg-transparent hover:bg-transparent border-none text-secondaryV">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </button>
+                    </NavLink>
+
                     <div className="dropdown dropdown-end dropdown-hover transition-all duration-800">
                         <div tabIndex={0} role="button" className="m-1 rounded-sm text-sm py-2 px-3 bg-transparent font-semibold ">
                             <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-secondaryV focus:ring-2 focus:ring-transparent ">

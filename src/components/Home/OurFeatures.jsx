@@ -70,7 +70,7 @@ const OurFeatures = () => {
 
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] my-6 lg:my-12">
+        <section ref={targetRef} className="relative h-[300vh] my-6 lg:my-12 hidden">
             <div className="sticky top-24 flex h-[450px] items-center overflow-hidden">
                 <motion.div style={{ x }} className="flex gap-6">
                     {cards.map((card) => {
